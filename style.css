@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+}
+*::selection{
+    background-color: #FEC160;
+}
+body{
+    background-color: #F7ECDE;
+    padding-top: 48px;
+    
+}
+.h-first{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-first::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+.h-first:hover::before{
+    height: 60%;
+}
+.container2{
+    border-top: dotted;
+    margin-top: 55px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-2{
+    color: #B2AB49;
+    font-family: "Righteous", cursive;
+}
+.container3{
+    border-bottom: dotted;
+}
+.btn1{
+    width: 140px !important;
+}
+
